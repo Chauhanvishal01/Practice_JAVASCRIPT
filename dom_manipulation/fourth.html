@@ -10,15 +10,14 @@
  Write a JavaScript function that adds a new list item with 
  the text "New Item" to the list each time a button is clicked. -->
 
-    <ul id="ul">
-      <li >Namaste</li>
-    </ul>
+    <ul id="ul"></ul>
     <button onclick="AddItem()">Add Item</button>
     <script>
       function AddItem() {
         let ul = document.getElementById("ul");
-      
-        
+        let li = document.createElement("li");
+        li.innerHTML = "New Item";
+        ul.appendChild(li);
       }
     </script>
   </body>
