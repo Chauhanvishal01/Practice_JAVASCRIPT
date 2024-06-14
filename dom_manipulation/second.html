@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- Create an HTML page with an input field and a button. Write a JavaScript function that displays an alert with the text entered in the input field when the button is clicked. -->
+
+
+    <input type="text" id="input" />
+    <button id="btn">Click Me</button>
+
+    <script>
+      const input = document.getElementById("input");
+      const button = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        alert(`You entred: ${input.value}`);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Create an HTML page with an input field and a button. Write a JavaScript function that clears the text in the input field when the button is clicked. -->
+     <input type="text" id="input">
+     <button onclick="clearText()">Click Me</button>
+
+
+<!-- Create an HTML page with a paragraph. Write a JavaScript function that changes the font size of the paragraph to 80px when the button is clicked. -->
+
+<p id="para">Vishal Chauhan</p>
+<button onclick="ChangeFontSize()">Change Font Size</button>
+     <script>
+        function clearText(){
+            const input=document.getElementById("input")
+            input.value=""
+
+            }
+
+            
+            function ChangeFontSize(){
+            const p=document.getElementById("para")
+            p.style.fontSize="80px"
+        }
+     </script>
+  </body>
+</html>

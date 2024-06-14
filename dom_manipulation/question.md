@@ -1,17 +1,12 @@
 DOM Manipulation for Beginners
-Create an HTML page with a button and a paragraph. Write a JavaScript function that changes the text of the paragraph to "Hello, World!" when the button is clicked.
 
-Create an HTML page with an input field and a button. Write a JavaScript function that displays an alert with the text entered in the input field when the button is clicked.
 
-Create an HTML page with a div element. Write a JavaScript function that changes the background color of the div to blue when the button is clicked.
 
-Create an HTML page with a list (ul or ol). Write a JavaScript function that adds a new list item with the text "New Item" to the list each time a button is clicked.
 
-Create an HTML page with an input field and a button. Write a JavaScript function that clears the text in the input field when the button is clicked.
+
 
 Create an HTML page with an image. Write a JavaScript function that changes the source of the image to a different image URL when the button is clicked.
 
-Create an HTML page with a paragraph. Write a JavaScript function that changes the font size of the paragraph to 20px when the button is clicked.
 
 Create an HTML page with a paragraph. Write a JavaScript function that hides the paragraph when a button is clicked.
 

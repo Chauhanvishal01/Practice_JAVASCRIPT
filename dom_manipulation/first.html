@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Create an HTML page with a button and a paragraph. Write a JavaScript function that changes the text of the paragraph to "Hello, World!" when the button is clicked. -->
+
+    <p id="paragraph">Vishal Chauhan</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      const button = document.getElementById("btn");
+
+      function ChangeText() {
+        btn.addEventListener("click", () => {
+          paragraph.innerHTML = "Hello World";
+        });
+      }
+      ChangeText()
+    </script>
+
+    <!-- <script>
+      const paragraph = document.getElementById("paragraph");
+      const button = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        paragraph.innerHTML = "Hello World";
+      });
+    </script> -->
+  </body>
+</html>
