@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Create an HTML page with a select dropdown and a paragraph. Write a JavaScript function that changes the text of the paragraph to the selected option in the dropdown when it is changed. -->
+
+    <select id="dropdown" onclick="updatePara()">
+      <option>--select an option</option>
+      <option value="html">HTML</option>
+      <option value="css">css</option>
+      <option value="js">js</option>
+      <option value="nodejs">nodejs</option>
+    </select>
+    <p id="para">Lorem ipsum dolor sit amet.</p>
+
+    <script>
+      const para = document.getElementById("para");
+      const dropdown = document.getElementById("dropdown");
+      function updatePara() {
+        para.textContent = dropdown.value;
+      }
+    </script>
+  </body>
+</html>

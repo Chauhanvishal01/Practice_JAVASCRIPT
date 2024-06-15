@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Create an HTML page with a paragraph. Write a JavaScript function that hides the paragraph when a button is clicked. -->
+    <!-- Create an HTML page with a paragraph. Write a JavaScript function that shows the hidden paragraph when a button is clicked. -->
+    <!-- Create an HTML page with two buttons, "Show" and "Hide", and a paragraph. Write JavaScript functions to show and hide the paragraph when the respective buttons are clicked. -->
+    <!-- Create an HTML page with a paragraph. Write a JavaScript function that toggles the visibility of the paragraph when a button is clicked. -->
+
+    <p id="para">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+      officia, labore aperiam fuga non repellat itaque obcaecati vero eos cum
+      possimus, expedita quis amet saepe quisquam distinctio excepturi quod
+      porro?
+    </p>
+
+    <button onclick="showAndHide()">Show And Hide</button>
+
+    <!-- <button onclick="hide()">Hide Content</button>
+    <button onclick="Show()">Show Content</button> -->
+    <script>
+      const para = document.getElementById("para");
+
+      //-------------Approach One----------------------
+      //   function hide() {
+      //     para.style.display = "none";
+      //   }
+      //   function Show() {
+      //     para.style.display = "inline-block";
+      //   }
+
+      //-------------Approach Two----------------------
+
+      function showAndHide() {
+        if (para.style.display === "block") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
