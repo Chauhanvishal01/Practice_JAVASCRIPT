@@ -1,17 +1,7 @@
 Questions on Objects
-Create an object representing a person with properties name, age, and city. Access and print each property.
 
-Create an object representing a car with properties make, model, and year. Add a new property color to the car object and print the updated object.
 
-Create an object representing a book with properties title, author, and pages. Update the pages property and print the updated object.
 
-Create an object representing a student with properties firstName, lastName, and grade. Write a function that takes the student object and returns a formatted string with the student's full name and grade.
-
-Create an object representing a library with properties name, location, and an array of books. Each book should have title and author properties. Add a new book to the library and print the updated library object.
-
-Create an object representing a company with properties name, address, and employees (an array of employee names). Write a function that takes the company object and returns the number of employees.
-
-Create an object representing a recipe with properties title, ingredients (an array of ingredient names), and servings. Add a new ingredient to the recipe and print the updated recipe object.
 
 Create an object representing a movie with properties title, director, and year. Write a function that takes the movie object and checks if the movie is older than 20 years.
 
