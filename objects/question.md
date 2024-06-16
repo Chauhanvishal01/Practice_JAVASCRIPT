@@ -3,15 +3,7 @@ Questions on Objects
 
 
 
-Create an object representing a movie with properties title, director, and year. Write a function that takes the movie object and checks if the movie is older than 20 years.
 
-Create an object representing a smartphone with properties brand, model, and specifications (an object with properties storage and battery). Update the storage property and print the updated smartphone object.
-
-Create an object representing a course with properties title, instructor, and students (an array of student names). Write a function that takes the course object and adds a new student to the course.
-
-Create an object representing a store with properties name, location, and products (an array of product objects with name and price properties). Write a function that calculates the total price of all products in the store.
-
-Create an object representing a playlist with properties name, genre, and songs (an array of song objects with title and artist properties). Write a function that adds a new song to the playlist.
 
 Create an object representing a bank account with properties accountNumber, holderName, and balance. Write a function that takes the bank account object and a deposit amount, adds the deposit to the balance, and returns the updated balance.
 
