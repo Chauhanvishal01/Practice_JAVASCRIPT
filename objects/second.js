@@ -70,7 +70,7 @@ Write a function that calculates the total price of all products in the store.
 */
 const store = {
   name: "The Mall",
-  location: "New Delhi",
+  location: "Delhi",
   products: [
     {
       name: "Shoes",
