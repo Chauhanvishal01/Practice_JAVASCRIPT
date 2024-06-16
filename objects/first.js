@@ -34,7 +34,8 @@ book.pages = 300;
 
 console.log(book);
 
-// Create an object representing a student with properties firstName, lastName, and grade. Write a function that takes the student object and returns a formatted string with the student's full name and grade.
+/* Create an object representing a student with properties firstName, lastName, and grade. 
+Write a function that takes the student object and returns a formatted string with the student's full name and grade. */
 
 const student = {
   firstname: "Vishal",
@@ -47,7 +48,8 @@ function display(student) {
 }
 console.log(display(student));
 
-// Create an object representing a library with properties name, location, and an array of books. Each book should have title and author properties. Add a new book to the library and print the updated library object.
+/* Create an object representing a library with properties name, location, and an array of books. 
+Each book should have title and author properties. Add a new book to the library and print the updated library object. */
 
 const library = {
   name: "Gyan Library",
