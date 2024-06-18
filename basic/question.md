@@ -1,10 +1,8 @@
-Loops
-Print the first 10 elements of the Fibonacci sequence using a for loop.
+# Loops
+----Complete
 
-
-Conditional Statements
-Write a function that prints "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both 3 and 5 for numbers from 1 to 50.
-Write a function that checks if a string is a palindrome.
+# Conditional Statements
+--Complete
 
 
 Objects
