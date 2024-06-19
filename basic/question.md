@@ -6,12 +6,7 @@
 
 
 # Objects
-Create an object representing a book with properties like title, author, and numberOfPages. Access and print each property.
-Write a function that takes an object representing a person with properties like name, age, and city, and prints a formatted string introducing the person.
-
-Write a function that adds a new property to an existing object.
-Write a function that deletes a property from an object.
-Write a function that checks if a property exists in an object.
+----Complete
 
 
 
