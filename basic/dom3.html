@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #error {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" id="form">
+      <input type="text" placeholder="Enter your Name" id="name" />
+      <input type="Email" placeholder="Enter your Email" id="email" />
+      <button type="submit" id="btn">Submit</button>
+      <p id="error">Both fields are required</p>
+    </form>
+
+    <script>
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", (event) => {
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const error = document.getElementById("error");
+        if (name.value === "" || email.value === "") {
+          error.style.display = "block";
+          event.preventDefault();
+        } else {
+          error.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- Create a simple form in HTML with fields 
+ for name and email. Write a JavaScript function 
+ that validates the form,ensuring both 
+ fields are filled out before submission. -->

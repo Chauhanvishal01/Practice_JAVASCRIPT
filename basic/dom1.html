@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para">Hello World</p>
+    <button id="btn">Click ME</button>
+    <br /><br />
+
+    <form>
+      <input type="text" placeholder="Enter Some value" id="input" required />
+      <button id="alert" >Alert the text</button>
+    </form>
+    <script>
+      const p = document.getElementById("para");
+      const button = document.getElementById("btn");
+      console.log(p);
+      btn.addEventListener("click", () => {
+        p.innerText = "Text has been changed";
+        console.log("click");
+      });
+
+      //----------------2-------------
+      const input = document.getElementById("input");
+      const alertBtn = document.getElementById("alert");
+
+      alertBtn.addEventListener("click", () => {
+        alert(`You entered : ${input.value}`);
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+Create a button and a paragraph element in HTML.
+ Write a JavaScript function that changes the text of the 
+ paragraph when the button is clicked.  -->
+
+<!-- 
+Create an input box and a button in HTML. 
+Write a JavaScript function that displays an alert 
+with the text entered in the input box when the 
+button is clicked. -->
