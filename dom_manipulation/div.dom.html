@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="update">Content</div>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+      const div = document.querySelector("#update");
+      const btn = document.querySelector("#btn");
+      const p = document.createElement("p");
+
+      btn.addEventListener("click", () => {
+        update.innerHTML = "Content Updated";
+        div.classList.toggle("highlight");
+        // div.classList.add("highlight")
+        //  div.classList.remove("highlight")
+        p.textContent = "New Paragraph";
+        div.appendChild(p);
+      });
+    </script>
+  </body>
+</html>
+<!-- 
+Create an HTML page with a div.
+ Write a JavaScript function that changes the content 
+ of the div to "Content Updated" when a button is clicked.
+
+Create an HTML page with a div.
+ Write a JavaScript function that adds a class "highlight" 
+ to the div when a button is clicked.
+
+Create an HTML page with a div.
+ Write a JavaScript function that removes the class "highlight" 
+ from the div when a button is clicked.
+ 
+Create an HTML page with a div. 
+Write a JavaScript function that toggles the class 
+"highlight" on the div when a button is clicked.
+
+
+Create an HTML page with a div. 
+Write a JavaScript function that
+appends a new paragraph inside the div
+with the text "New Paragraph" when a button is clicked.
+
+ 
+ -->

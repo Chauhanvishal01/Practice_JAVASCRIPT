@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Create an HTML page with multiple paragraphs.
+  Write a JavaScript function that changes the text color of 
+  all paragraphs to red when a button is clicked. -->
+
+    <div class="main">
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt
+        ratione sequi delectus possimus amet molestiae? Numquam, corporis
+        voluptatibus? Modi.
+      </p>
+      <button id="btn">Change Color to red</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const p = document.querySelectorAll(".para");
+      btn.addEventListener("click", () => {
+        p.forEach((para) => {
+          para.style.color = "red";
+        });
+      });
+    </script>
+  </body>
+</html>

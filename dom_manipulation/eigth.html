@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            border: 2px solid #eee;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+  </head>
+  <body >
+
+    <!-- Create an HTML page with an image. Write a JavaScript function that changes the source of the image to a different image URL when the button is clicked. -->
+
+  <div class="container">
+    <img src="../img/start.png" id="play" />
+    <button id="btn">Stop</button>
+  </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const img = document.getElementById("play");
+      btn.addEventListener("click", () => {
+        // play.src="../img/stop.png"
+        // btn.innerText="Play"
+        if (btn.innerText === "Stop") {
+          play.src = "../img/stop.png";
+          btn.innerText = "Play";
+        } else {
+          play.src = "../img/start.png";
+          btn.innerText = "Stop";
+        }
+      });
+    </script>
+  </body>
+</html>

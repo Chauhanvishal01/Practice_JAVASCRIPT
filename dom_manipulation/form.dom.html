@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <input type="text" placeholder="Enter your name.." id="name">
+        <input type="email" placeholder="Enter your email..." id="email">
+        <button type="submit" id="btn">Submit</button>
+    </form>
+    <script>
+        const name=document.getElementById("name")
+        const email=document.getElementById("email")
+        const btn=document.getElementById("btn")
+
+        btn.addEventListener("click",(event)=>{
+            event.preventDefault()
+            console.log(`Name: ${name.value}`);
+            console.log(`Email: ${email.value}`);
+
+        })
+
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- Create an HTML page with a form containing a 
+ name and email input field, and a submit button.
+  Write a JavaScript function that prevents the form 
+  from submitting and instead logs the entered values 
+  to the console when the submit button is clicked. -->
+
