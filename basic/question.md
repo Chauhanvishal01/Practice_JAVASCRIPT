@@ -1,19 +1,19 @@
 # Loops
-----Complete
+----Complete✅️
 
 # Conditional Statements
-----Complete
+----Complete✅️
 
 
 # Objects
-----Complete
+----Complete✅️
 
 
 
 # DOM Manipulation
-----Complete
+----Complete✅️
 
 
 # Array
-----Complete
+----Complete✅️
 
