@@ -3,6 +3,6 @@
 --Learn JS by solving  questions
 
 ---Basic✅️
----Array_Method🔜️
+---Array_Method✅️
 ---Dom Manipulation✅️
 ---Objects✅️
