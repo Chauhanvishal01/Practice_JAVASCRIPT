@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Vishal Chauhan</p>
+    <p>Vishal Chauhan</p>
+    <p>Vishal Chauhan</p>
+    <p>Vishal Chauhan</p>
+    <p id="hide">Vishal Chauhan Hide</p>
+    <button id="colorBtn">Click Me</button>
+    <script>
+      /* 
+        Write a function that changes the color of all <p> elements 
+            to red when a button with ID "colorButton" is clicked. */
+
+      /* 
+            Write a function that adds a click event listener to a 
+            button with the ID "myButton" to change the background color of the page to blue when clicked. */
+
+      /* 
+            Write a function that hides an element with a given 
+            ID when a button with ID "hideButton" is clicked. */
+
+      const btn = document.getElementById("colorBtn");
+      let p = document.querySelectorAll("p");
+      const body = document.body;
+      const hide = document.getElementById("hide");
+      function changeColor() {
+        body.style.backgroundColor = "blue";
+        hide.style.display = "none";
+        p.forEach((p) => {
+          p.style.color = "red";
+        });
+      }
+      btn.addEventListener("click", changeColor);
+    </script>
+  </body>
+</html>
