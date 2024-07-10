@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="myText">Hello</p>
+    <button id="changeTextBtn">Change Text</button>
+    <button id="removeItemButton">Remove item</button>
+    <ul id="ul">
+      <li>Car</li>
+      <li>Bike</li>
+      <li>Bus</li>
+      <li>Train</li>
+    </ul>
+    <script>
+      const p = document.getElementById("myText");
+      const btn = document.getElementById("changeTextBtn");
+      const removeBtn = document.getElementById("removeItemButton");
+      function changeText() {
+        p.innerText = "New Text";
+      }
+
+      const ul = document.getElementById("ul");
+      const li = document.createElement("li");
+      li.innerText = "Plane";
+      function additem() {
+        ul.appendChild(li);
+      }
+      function removeItem() {
+        if (ul.lastElementChild) {
+          ul.removeChild(ul.lastElementChild);
+        }
+      }
+
+      btn.addEventListener("click", () => {
+        changeText();
+        additem();
+      });
+      removeBtn.addEventListener("click", removeItem);
+    </script>
+  </body>
+</html>
+
+<!-- Write a function that changes the text content of an element with ID "myText" to "New Text" 
+ when a button with ID "changeTextBtn" is clicked. -->
+
+<!-- Write a function that adds a new item to a 
+  list with ID "myList" when a button with ID
+   "addItemButton" is clicked. -->
+
+<!-- Write a function that removes the last item from a list with ID "myList" when a
+  button with ID "removeItemButton" is clicked. -->

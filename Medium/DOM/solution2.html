@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="appendvalues()">Append</button>
+
+    <div id="toggleElement">Visibility</div>
+    <button id="toggleBtn">Toggle</button>
+    <script>
+      function appendvalues() {
+        const body = document.body;
+        const p = document.createElement("p");
+        p.textContent = "Hello, World!";
+        body.appendChild(p);
+      }
+
+      function toggles() {
+        const element = document.getElementById("toggleElement");
+        if ((element.style.visibility === "hidden")) {
+          element.style.visibility = "visible";
+        } else {
+          element.style.visibility = "hidden";
+        }
+      }
+      const togglebtn = document.getElementById("toggleBtn");
+
+      togglebtn.addEventListener("click", toggles);
+    </script>
+  </body>
+</html>
+
+<!-- Write a function that creates a new <p> element with the text "Hello, World!" 
+    and appends it to the body of the document. -->
+
+<!-- Write a function that toggles the visibility of an element with ID "toggleElement" 
+    each time a button with ID "toggleBtn" is clicked. -->

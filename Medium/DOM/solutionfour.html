@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/9551192/pexels-photo-9551192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      id="img"
+      style="width: 500px"
+    />
+    <button id="change">Change Img</button>
+    <br /><br />
+
+    <input
+      type="text"
+      placeholder="Enter your name...."
+      style="padding: 10px"
+      id="input"
+    />
+    <!-- <button id="submit">Submit</button> -->
+    <script>
+      const img = document.getElementById("img");
+      const btn = document.getElementById("change");
+      const submitBtn = document.getElementById("submit");
+      const changeImg = () => {
+        img.src =
+          "https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+      };
+      const logValue = () => {
+        const input = document.getElementById("input").value;
+        console.log("Your name is: ", input);
+      };
+
+      document.getElementById('input').addEventListener('blur',logValue)
+      btn.addEventListener("click", changeImg);
+
+
+    //   submitBtn.addEventListener("click", logValue);
+    </script>
+  </body>
+</html>
+<!-- 
+Write a function that takes an image 
+element ID and a new source URL and changes the 
+src attribute of the image element.
+Write a function that logs the value of an input
+ field with ID "input" to the console when the input 
+ field loses focus (onblur event). -->
+
