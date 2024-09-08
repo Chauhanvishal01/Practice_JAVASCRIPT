@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="email" placeholder="Enter your email...." id="email"  name="email"/>
+      <input type="password" placeholder="enter yourr password..." id="pass"  name="pass"/>
+      <button type="submit">Login</button>
+    </form>
+    <div>
+      <p id="para"></p>
+    </div>
+
+    <select id="options">
+      <option value="mango">Mango</option>
+      <option value="Apple">Apple</option>
+      <option value="Banana">Banana</option>
+      <option value="Cherry">Cherry</option>
+    </select>
+
+    <script>
+      const form = document.getElementById("form");
+      const para = document.getElementById("para");
+
+      form.addEventListener("submit", (e) => {
+          e.preventDefault();
+        console.log(`Your Email is ${form.email.value} and pass is ${form.pass.value}`);
+      });
+
+      const options = document.getElementById("options");
+      options.addEventListener("change", () => {
+        // console.log(options.value);
+        para.textContent=options.value
+      });
+    </script>
+  </body>
+</html>
